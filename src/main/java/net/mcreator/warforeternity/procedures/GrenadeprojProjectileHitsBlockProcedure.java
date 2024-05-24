@@ -9,6 +9,6 @@ public class GrenadeprojProjectileHitsBlockProcedure {
 		if (immediatesourceentity == null)
 			return;
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 4, Level.ExplosionInteraction.TNT);
+			_level.explode(null, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 2, Level.ExplosionInteraction.MOB);
 	}
 }
