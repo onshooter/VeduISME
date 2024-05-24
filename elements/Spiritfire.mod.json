@@ -34,7 +34,7 @@
       "fixedValue": []
     },
     "hasGlow": false,
-    "guiBoundTo": "Grenades",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 4,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {

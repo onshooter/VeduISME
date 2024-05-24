@@ -64,7 +64,7 @@ public class CrosshairOverlay {
 			if (RighthitProcedure.execute(entity)) {
 				event.getGuiGraphics().blit(new ResourceLocation("war_for_eternity:textures/screens/righthit2.png"), w / 2 + -24, h / 2 + -26, 0, 0, 64, 64, 64, 64);
 			}
-			event.getGuiGraphics().blit(new ResourceLocation("war_for_eternity:textures/screens/health1.png"), w - 129, 1, 0, 0, 128, 128, 128, 128);
+			event.getGuiGraphics().blit(new ResourceLocation("war_for_eternity:textures/screens/health1.png"), w - 96, -6, 0, 0, 128, 128, 128, 128);
 
 			event.getGuiGraphics().blit(new ResourceLocation("war_for_eternity:textures/screens/stamina.png"), 0, 0, 0, 0, 128, 128, 128, 128);
 

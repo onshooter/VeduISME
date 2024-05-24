@@ -20,6 +20,7 @@ import net.minecraft.client.KeyMapping;
 
 import net.mcreator.warforeternity.network.XMessage;
 import net.mcreator.warforeternity.network.VMessage;
+import net.mcreator.warforeternity.network.GMessage;
 import net.mcreator.warforeternity.network.CMessage;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -63,12 +64,26 @@ public class WarForEternityModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping G = new KeyMapping("key.war_for_eternity.g", GLFW.GLFW_KEY_G, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.SERVER.noArg().send(new GMessage(0, 0));
+				GMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(X);
 		event.register(C);
 		event.register(V);
+		event.register(G);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -79,6 +94,7 @@ public class WarForEternityModKeyMappings {
 				X.consumeClick();
 				C.consumeClick();
 				V.consumeClick();
+				G.consumeClick();
 			}
 		}
 	}

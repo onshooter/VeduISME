@@ -648,7 +648,6 @@
           "src/main/java/net/mcreator/warforeternity/item/SpiritfireItem.java",
           "src/main/java/net/mcreator/warforeternity/item/model/SpiritfireItemModel.java",
           "src/main/resources/assets/war_for_eternity/models/item/spiritfire.json",
-          "src/main/java/net/mcreator/warforeternity/item/inventory/SpiritfireInventoryCapability.java",
           "src/main/java/net/mcreator/warforeternity/item/renderer/SpiritfireItemRenderer.java"
         ]
       },
@@ -788,6 +787,44 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "GOnKeyPressed",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "g_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/warforeternity/procedures/GOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/spitfire"
+    },
+    {
+      "name": "G",
+      "type": "keybind",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "g",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/warforeternity/network/GMessage.java"
+        ]
+      },
+      "path": "~/spitfire"
     }
   ],
   "variable_elements": [
@@ -876,6 +913,7 @@
       "item.war_for_eternity.spiritfire": "Spiritfire",
       "key.war_for_eternity.v": "V",
       "item.war_for_eternity.sniperbullet": "Sniperbullet",
+      "key.war_for_eternity.g": "G",
       "key.war_for_eternity.x": "X",
       "item.war_for_eternity.shotgunbullet": "Shotgunbullet"
     }
