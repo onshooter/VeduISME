@@ -1,0 +1,7 @@
+{
+  "parent": "war_for_eternity:custom/grenade",
+  "textures": {
+    "0": "war_for_eternity:block/texture",
+    "particle": "war_for_eternity:item/grenade"
+  }
+}

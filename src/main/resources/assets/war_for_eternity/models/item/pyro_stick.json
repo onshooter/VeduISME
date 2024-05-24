@@ -1,0 +1,6 @@
+{
+  "parent": "war_for_eternity:displaysettings/stick.item",
+  "textures": {
+    "layer0": "war_for_eternity:item/rtm"
+  }
+}

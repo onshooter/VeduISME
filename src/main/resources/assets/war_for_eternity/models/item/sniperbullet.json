@@ -1,0 +1,7 @@
+{
+  "parent": "war_for_eternity:custom/bullet",
+  "textures": {
+    "1": "war_for_eternity:block/sniperbullet",
+    "particle": "war_for_eternity:item/sniperbullet"
+  }
+}

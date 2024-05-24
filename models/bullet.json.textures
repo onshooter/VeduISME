@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "sniperbullet"
+      },
+      "name": "default"
+    },
+    "shadowgun": {
+      "map": {
+        "1": "bullet"
+      },
+      "name": "shadowgun"
+    }
+  }
+}

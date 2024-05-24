@@ -1,0 +1,19 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Shotgunbullet"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": true,
+    "power": 0.1,
+    "damage": 36.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "shtgunbullet.png"
+  }
+}

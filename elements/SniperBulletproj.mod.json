@@ -1,0 +1,19 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Sniperbullet"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.generic.explode"
+    },
+    "igniteFire": false,
+    "power": 20.0,
+    "damage": 30.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "sniperbullet.png"
+  }
+}

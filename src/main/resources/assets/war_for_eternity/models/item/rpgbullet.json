@@ -1,0 +1,7 @@
+{
+  "parent": "war_for_eternity:custom/rpgbulet",
+  "textures": {
+    "0": "war_for_eternity:block/rpgbulet",
+    "particle": "war_for_eternity:item/rpgbulet"
+  }
+}

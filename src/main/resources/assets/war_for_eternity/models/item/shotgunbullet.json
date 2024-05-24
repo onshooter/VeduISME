@@ -1,0 +1,7 @@
+{
+  "parent": "war_for_eternity:custom/shotgunbullet",
+  "textures": {
+    "0": "war_for_eternity:block/shtgunbullet",
+    "particle": "war_for_eternity:item/shtgunbullet"
+  }
+}

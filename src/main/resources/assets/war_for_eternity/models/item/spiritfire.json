@@ -1,0 +1,6 @@
+{
+  "parent": "war_for_eternity:displaysettings/spiritfire.item",
+  "textures": {
+    "layer0": "war_for_eternity:item/texture"
+  }
+}

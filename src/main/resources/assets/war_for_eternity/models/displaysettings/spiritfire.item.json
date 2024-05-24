@@ -1,0 +1,146 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    128,
+    128
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        66,
+        180,
+        0
+      ],
+      "translation": [
+        -4,
+        1.5,
+        -5.5
+      ],
+      "scale": [
+        0.5,
+        0.4375,
+        0.5156
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        66,
+        180,
+        0
+      ],
+      "translation": [
+        1.5,
+        1.5,
+        -5.5
+      ],
+      "scale": [
+        0.5,
+        0.4375,
+        0.5156
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        168,
+        0,
+        180
+      ],
+      "translation": [
+        6.75,
+        -1,
+        3.5
+      ],
+      "scale": [
+        0.5,
+        0.4375,
+        0.515625
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        168,
+        0,
+        180
+      ],
+      "translation": [
+        6.75,
+        -1,
+        3.5
+      ],
+      "scale": [
+        0.5,
+        0.4375,
+        0.515625
+      ]
+    },
+    "ground": {
+      "rotation": [
+        103,
+        166,
+        0
+      ],
+      "translation": [
+        6.75,
+        16,
+        3.5
+      ],
+      "scale": [
+        0.5,
+        0.4375,
+        0.515625
+      ]
+    },
+    "gui": {
+      "rotation": [
+        -19.5,
+        46.25,
+        0
+      ],
+      "translation": [
+        2.5,
+        -5.5,
+        0
+      ],
+      "scale": [
+        0.339140625,
+        0.383359375,
+        0.444453125
+      ]
+    },
+    "head": {
+      "rotation": [
+        168,
+        0,
+        180
+      ],
+      "translation": [
+        -1.75,
+        -1,
+        0.5
+      ],
+      "scale": [
+        0.5,
+        0.4375,
+        0.515625
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        10.18,
+        -89.1,
+        11.72
+      ],
+      "translation": [
+        -0.75,
+        -7.25,
+        1.25
+      ],
+      "scale": [
+        0.5,
+        0.4375,
+        0.515625
+      ]
+    }
+  }
+}

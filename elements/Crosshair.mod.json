@@ -1,0 +1,101 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "crosshair2.png",
+          "use1Xscale": true,
+          "anchorPoint": "CENTER",
+          "x": 198,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "backhit2.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Backhit2"
+          },
+          "anchorPoint": "CENTER",
+          "x": 183,
+          "y": 96
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lefthit2.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Lefthit"
+          },
+          "anchorPoint": "CENTER",
+          "x": 173,
+          "y": 94
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "righthit2.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Righthit"
+          },
+          "anchorPoint": "CENTER",
+          "x": 189,
+          "y": 94
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "Entityprovider"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 1,
+          "y": 220
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "health1.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_RIGHT",
+          "x": 298,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stamina.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 0,
+          "y": 0
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
