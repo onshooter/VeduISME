@@ -1,0 +1,19 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:PyroStick"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.metal.break"
+    },
+    "igniteFire": false,
+    "power": 15.0,
+    "damage": 17.0,
+    "knockback": 25,
+    "entityModel": "Default",
+    "customModelTexture": "rtm.png"
+  }
+}

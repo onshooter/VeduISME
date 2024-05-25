@@ -16,6 +16,7 @@ import net.mcreator.warforeternity.entity.SniperBulletprojEntity;
 import net.mcreator.warforeternity.entity.ShotgunBulletprojEntity;
 import net.mcreator.warforeternity.entity.RpgbulletprojEntity;
 import net.mcreator.warforeternity.entity.GrenadeprojEntity;
+import net.mcreator.warforeternity.entity.AnimatedEntity;
 import net.mcreator.warforeternity.WarForEternityMod;
 
 public class WarForEternityModEntities {
@@ -28,6 +29,8 @@ public class WarForEternityModEntities {
 			EntityType.Builder.<SniperBulletprojEntity>of(SniperBulletprojEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<GrenadeprojEntity>> GRENADEPROJ = register("grenadeproj",
 			EntityType.Builder.<GrenadeprojEntity>of(GrenadeprojEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<AnimatedEntity>> ANIMATED = register("animated",
+			EntityType.Builder.<AnimatedEntity>of(AnimatedEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

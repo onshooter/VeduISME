@@ -57,7 +57,7 @@ public record VMessage(int type, int pressedms) implements CustomPacketPayload {
 			return;
 		if (type == 0) {
 
-			VOnKeyPressedProcedure.execute();
+			VOnKeyPressedProcedure.execute(world, entity);
 		}
 	}
 

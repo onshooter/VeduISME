@@ -90,7 +90,16 @@ public class XOnKeyPressedProcedure {
 				_vars.rpg = false;
 				_vars.syncPlayerVariables(entity);
 			}
-			return entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).rpg && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).rpg;
+			{
+				WarForEternityModVariables.PlayerVariables _vars = entity.getData(WarForEternityModVariables.PLAYER_VARIABLES);
+				_vars.shotgun = true;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				WarForEternityModVariables.PlayerVariables _vars = entity.getData(WarForEternityModVariables.PLAYER_VARIABLES);
+				_vars.sniper = false;
+				_vars.syncPlayerVariables(entity);
+			}
 		}
 		return entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).AxeMode && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).HammerMode && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).SwordMode
 				&& entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).StickMode && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).rpg && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).sniper

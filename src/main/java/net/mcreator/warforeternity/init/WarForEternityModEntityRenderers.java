@@ -19,5 +19,6 @@ public class WarForEternityModEntityRenderers {
 		event.registerEntityRenderer(WarForEternityModEntities.SHOTGUN_BULLETPROJ.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(WarForEternityModEntities.SNIPER_BULLETPROJ.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(WarForEternityModEntities.GRENADEPROJ.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(WarForEternityModEntities.ANIMATED.get(), ThrownItemRenderer::new);
 	}
 }

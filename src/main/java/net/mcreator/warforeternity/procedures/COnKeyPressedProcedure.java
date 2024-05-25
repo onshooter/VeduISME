@@ -17,9 +17,9 @@ import net.mcreator.warforeternity.init.WarForEternityModItems;
 import java.util.Comparator;
 
 public class COnKeyPressedProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static boolean execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
-			return;
+			return false;
 		if (entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).AxeMode == true) {
 			{
 				WarForEternityModVariables.PlayerVariables _vars = entity.getData(WarForEternityModVariables.PLAYER_VARIABLES);
@@ -31,7 +31,7 @@ public class COnKeyPressedProcedure {
 				_vars.SwordMode = true;
 				_vars.syncPlayerVariables(entity);
 			}
-		} else if (entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).HammerMode == true && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).AxeThrown == true) {
+		} else if (entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).HammerMode == true) {
 			if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerEntSetSlot) {
 				ItemStack _setstack = new ItemStack(WarForEternityModItems.PYRO_STICK.get()).copy();
 				_setstack.setCount(1);
@@ -49,7 +49,7 @@ public class COnKeyPressedProcedure {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
-			}.compareDistOf((entity.getX()), (entity.getY()), (entity.getZ()))).findFirst().orElse(null)).setSecondsOnFire(30);
+			}.compareDistOf((entity.getX()), (entity.getY()), (entity.getZ()))).findFirst().orElse(null)).setSecondsOnFire(60);
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(WarForEternityModItems.PYRO_STICK.get(), 300);
 			{
@@ -57,6 +57,25 @@ public class COnKeyPressedProcedure {
 				_vars.PyroStickPyro = false;
 				_vars.syncPlayerVariables(entity);
 			}
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WarForEternityModItems.SPIRITFIRE.get()) {
+			{
+				WarForEternityModVariables.PlayerVariables _vars = entity.getData(WarForEternityModVariables.PLAYER_VARIABLES);
+				_vars.shotgun = false;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				WarForEternityModVariables.PlayerVariables _vars = entity.getData(WarForEternityModVariables.PLAYER_VARIABLES);
+				_vars.sniper = true;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				WarForEternityModVariables.PlayerVariables _vars = entity.getData(WarForEternityModVariables.PLAYER_VARIABLES);
+				_vars.rpg = false;
+				_vars.syncPlayerVariables(entity);
+			}
 		}
+		return entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).AxeMode && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).HammerMode && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).PyroStickPyro
+				&& entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).SwordMode && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).StickMode && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).shotgun
+				&& entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).rpg && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).sniper;
 	}
 }

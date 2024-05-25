@@ -1,13 +1,16 @@
 {
+  "death.attack.cut_in_half.player": "%1$s died whilst trying to escape %2$s",
+  "gui.war_for_eternity.cooldown.label_empty": "",
+  "key.war_for_eternity.g": "G",
   "key.war_for_eternity.c": "C",
   "item.war_for_eternity.grenade": "Grenade",
+  "death.attack.cut_in_half": "%1$s died",
   "item.war_for_eternity.pyro_stick": "Pyro Stick",
-  "gui.war_for_eternity.cooldown.label_empty": "",
   "item.war_for_eternity.rpgbullet": "Rpgbullet",
+  "death.attack.cut_in_half.item": "%1$s was killed by %2$s using %3$s",
   "item.war_for_eternity.spiritfire": "Spiritfire",
   "key.war_for_eternity.v": "V",
   "item.war_for_eternity.sniperbullet": "Sniperbullet",
-  "key.war_for_eternity.g": "G",
   "key.war_for_eternity.x": "X",
   "item.war_for_eternity.shotgunbullet": "Shotgunbullet"
 }
