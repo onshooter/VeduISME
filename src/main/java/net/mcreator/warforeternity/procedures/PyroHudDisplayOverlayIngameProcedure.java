@@ -9,7 +9,7 @@ public class PyroHudDisplayOverlayIngameProcedure {
 		if (entity == null)
 			return false;
 		boolean axemode = false;
-		if (entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).AxeMode == true) {
+		if (entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).AxeMode == true && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).TutorialOnOf == true) {
 			axemode = true;
 		}
 		return axemode;
