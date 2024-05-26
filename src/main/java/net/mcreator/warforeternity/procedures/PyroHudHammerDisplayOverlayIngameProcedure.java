@@ -11,6 +11,8 @@ public class PyroHudHammerDisplayOverlayIngameProcedure {
 		boolean hammermode = false;
 		if (entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).HammerMode == true && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).TutorialOnOf == true) {
 			hammermode = true;
+		} else {
+			hammermode = false;
 		}
 		return hammermode;
 	}

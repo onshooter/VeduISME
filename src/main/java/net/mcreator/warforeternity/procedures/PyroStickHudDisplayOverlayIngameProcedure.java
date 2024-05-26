@@ -11,6 +11,8 @@ public class PyroStickHudDisplayOverlayIngameProcedure {
 		boolean axemode = false;
 		if (entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).SwordMode == true && entity.getData(WarForEternityModVariables.PLAYER_VARIABLES).TutorialOnOf == true) {
 			axemode = true;
+		} else {
+			axemode = false;
 		}
 		return axemode;
 	}
