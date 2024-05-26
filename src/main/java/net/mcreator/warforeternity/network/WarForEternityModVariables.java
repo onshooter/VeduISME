@@ -71,6 +71,7 @@ public class WarForEternityModVariables {
 			clone.shotgun = original.shotgun;
 			clone.sniper = original.sniper;
 			clone.rpg = original.rpg;
+			clone.TutorialOnOf = original.TutorialOnOf;
 			if (!event.isWasDeath()) {
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -90,6 +91,7 @@ public class WarForEternityModVariables {
 		public boolean shotgun = false;
 		public boolean sniper = false;
 		public boolean rpg = false;
+		public boolean TutorialOnOf = false;
 
 		@Override
 		public CompoundTag serializeNBT() {
@@ -106,6 +108,7 @@ public class WarForEternityModVariables {
 			nbt.putBoolean("shotgun", shotgun);
 			nbt.putBoolean("sniper", sniper);
 			nbt.putBoolean("rpg", rpg);
+			nbt.putBoolean("TutorialOnOf", TutorialOnOf);
 			return nbt;
 		}
 
@@ -123,6 +126,7 @@ public class WarForEternityModVariables {
 			shotgun = nbt.getBoolean("shotgun");
 			sniper = nbt.getBoolean("sniper");
 			rpg = nbt.getBoolean("rpg");
+			TutorialOnOf = nbt.getBoolean("TutorialOnOf");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

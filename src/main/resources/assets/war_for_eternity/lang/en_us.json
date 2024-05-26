@@ -2,6 +2,7 @@
   "death.attack.cut_in_half.player": "%1$s died whilst trying to escape %2$s",
   "gui.war_for_eternity.cooldown.label_empty": "",
   "key.war_for_eternity.g": "G",
+  "gui.war_for_eternity.start_menu.Alwaya_Tutorial_HeadsUpDisplay": "Alwaya Tutorial HeadsUpDisplay",
   "key.war_for_eternity.c": "C",
   "item.war_for_eternity.grenade": "Grenade",
   "death.attack.cut_in_half": "%1$s died",

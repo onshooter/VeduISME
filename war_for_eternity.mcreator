@@ -793,10 +793,16 @@
       "locked_code": false,
       "registry_name": "healthproc",
       "metadata": {
+        "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/warforeternity/procedures/HealthprocProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -904,6 +910,43 @@
         ]
       },
       "path": "~/keybind"
+    },
+    {
+      "name": "StartMenu",
+      "type": "gui",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/warforeternity/client/gui/StartMenuScreen.java",
+          "src/main/java/net/mcreator/warforeternity/world/inventory/StartMenuMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "SM",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/warforeternity/procedures/SMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -978,6 +1021,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "TutorialOnOf",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -987,6 +1036,7 @@
       "death.attack.cut_in_half.player": "%1$s died whilst trying to escape %2$s",
       "gui.war_for_eternity.cooldown.label_empty": "",
       "key.war_for_eternity.g": "G",
+      "gui.war_for_eternity.start_menu.Alwaya_Tutorial_HeadsUpDisplay": "Alwaya Tutorial HeadsUpDisplay",
       "key.war_for_eternity.c": "C",
       "item.war_for_eternity.grenade": "Grenade",
       "death.attack.cut_in_half": "%1$s died",
